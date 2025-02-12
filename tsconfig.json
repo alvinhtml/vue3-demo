@@ -1,0 +1,56 @@
+{
+  // 编译器选项
+  "compilerOptions": {
+    // 目标 ECMAScript 版本
+    "target": "ESNext",
+    // 生成代码的模块化标准
+    "module": "ESNext",
+    // 允许从没有设置默认导出的模块中默认导入
+    "allowSyntheticDefaultImports": true,
+    // 启用所有严格的类型检查选项
+    "strict": true,
+    // 模块解析策略
+    "moduleResolution": "bundler",
+    // 启用装饰器
+    "experimentalDecorators": true,
+    // 启用元数据装饰器
+    "emitDecoratorMetadata": true,
+    // 允许导入 JSON 模块
+    "resolveJsonModule": true,
+    // 允许使用 jsx
+    "jsx": "preserve",
+    // 跳过库检查
+    "skipLibCheck": true,
+    // 基准目录
+    "baseUrl": ".",
+    // 路径别名配置
+    "paths": {
+      "/@src/*": ["./src/*"]
+    },
+    // 类型定义文件
+    "types": [
+      "vite/client",
+      "node",
+      "vue"
+    ],
+    // 编译时引入的库
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ]
+  },
+  // 包含的文件
+  "include": [
+    "src/**/*.js",
+    "src/**/*.ts",
+    "src/**/*.vue",
+    "types/**/*.d.ts",
+    "vite.config.ts"
+  ],
+  // 排除的文件
+  "exclude": [
+    "node_modules",
+    "dist",
+  ]
+}

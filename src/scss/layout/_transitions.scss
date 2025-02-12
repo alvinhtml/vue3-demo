@@ -1,0 +1,21 @@
+
+/* ==========================================================================
+1. fade-slow
+========================================================================== */
+
+.fade-slow-enter-active,
+.fade-slow-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-slow-enter-from,
+.fade-slow-leave-to {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-slow-enter-active,
+  .fade-slow-leave-active {
+    transition: none;
+  }
+}
